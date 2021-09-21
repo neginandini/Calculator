@@ -1,0 +1,80 @@
+<html>
+<body>
+    <!doctype html>
+    <html lang="en">
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script type="text/javascript" src="script.js"></script>
+        
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <title>calculator</title>
+      </head>
+      <body><br>  <center>
+        <div class="row  m-3 text-center font-weight-bold   text-light" style="width:40%">
+        <div class="jumbotron bg-muted text-dark col-md-11 m-2  font-weight-bold border"  style="width:100%" >
+            CALCULATOR<br>
+
+     <center>
+            <table border=1>
+                <tr>
+                    <form name="Cal">
+                   <td colspan=4 ><input type="text" id="given" name="ans"/></td></form>
+                </tr>
+                <tr><div class="row font-weight-bold">
+                    <td> <button onclick="Cal.ans.value += '1'" id="1" class="col  ">1</button></td>
+                    <td> <button onclick="Cal.ans.value += '2'" id="2" class="col ">2</button></td>
+                    <td> <button onclick="Cal.ans.value += '3'" id="3" class="col ">3</button></td>
+                    <td> <button onclick="Cal.ans.value += '/'" id="div" class="col text-dark">&divide;</button></td>
+                </tr>
+                <tr><div class="row font-weight-bold">
+                    <td> <button onclick="Cal.ans.value += '4'" id="4" class="col ">4</button></td>
+                    <td> <button onclick="Cal.ans.value += '5'" id="5" class="col ">5</button></td>
+                    <td> <button onclick="Cal.ans.value += '6'" id="6" class="col ">6</button></td>
+                    <td> <button onclick="Cal.ans.value += '*'" id="div" class="col text-dark">x</button></td>
+                </tr>
+                <tr><div class="row font-weight-bold">
+                    <td> <button onclick="Cal.ans.value += '7'" id="7" class="col ">7</button></td>
+                    <td> <button onclick="Cal.ans.value += '8'" id="8" class="col ">8</button></td>
+                    <td> <button onclick="Cal.ans.value += '9'" id="9" class="col ">9</button></td>
+                    <td> <button onclick="Cal.ans.value += '-'" id="div" class="col text-dark">-</button></td>
+                </tr>
+                <tr><div class="row font-weight-bold">
+                    <td> <button onclick="back()" id="back" class="col "><span class="fa fa-arrow-circle-left"></span></button></td>
+                    <td> <button onclick="pow();Cal.ans.value+='**'" id="^" class="col ">^</button></td>
+
+            
+                    </button></td>
+                    <td> <button onclick="Cal.ans.value += '0'" id="3" class="col ">0</button></td>
+  
+                    <td> <button onclick="Cal.ans.value += '+'" id="div" class="col text-dark">+</button></td>
+                </tr>
+                <tr><div class="row font-weight-bold">
+                    <td colspan=2> <button onclick="Cal.ans.value=''" id="cl" class="col ">Clear</button></td>
+                    <td> <button  id="." class="col ">.</button></td>
+                    <td> <button onclick="hist()"  id="eq" class="col text-dark">=</button></td>
+                </tr>
+                </div> 
+                </tr>
+
+
+            </table>
+    </div></div>
+    <div  >
+      
+        <ul type="none" style="color: white; background-color: darkslateblue; width: 60%; height:150px;">
+            <li id="hist"><h3>History</h3></li>
+        </ul>
+</div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
